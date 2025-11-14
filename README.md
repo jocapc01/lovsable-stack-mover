@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+# Agendamentos Multi-Loja
 
-## Project info
+Este projeto é um sistema de agendamentos multi-loja que permite que lojas, salões, barbearias e clínicas gerenciem seus serviços e agendamentos de forma eficiente. O sistema oferece uma interface personalizada para cada loja, permitindo que os proprietários configurem suas páginas e gerenciem suas operações.
 
-**URL**: https://lovable.dev/projects/28d83018-ebe0-4a6f-bbed-63f76f4ee34d
+## Funcionalidades
 
-## How can I edit this code?
+- **Cadastro de Lojas**: Permite que novas lojas se cadastrem e criem suas páginas personalizadas.
+- **Gerenciamento de Serviços**: Cada loja pode adicionar, editar e excluir serviços oferecidos.
+- **Agendamentos**: Clientes podem agendar serviços, que são gerenciados pelos recepcionistas.
+- **Painel Administrativo**: Um painel para administradores gerencia todas as lojas e visualiza relatórios.
+- **Notificações**: Sistema de notificações via e-mail e WhatsApp para agendamentos.
 
-There are several ways of editing your application.
+## Estrutura do Projeto
 
-**Use Lovable**
+- **public/**: Contém os arquivos acessíveis publicamente, como o ponto de entrada da aplicação (`index.php`), arquivos CSS e JavaScript.
+- **src/**: Contém a lógica da aplicação, incluindo controladores, modelos, serviços e helpers.
+- **config/**: Contém as configurações do banco de dados.
+- **migrations/**: Diretório para arquivos de migração do banco de dados.
+- **sql/**: Contém o esquema do banco de dados.
+- **tests/**: Contém testes unitários para a aplicação.
+- **composer.json**: Arquivo de configuração do Composer.
+- **.env.example**: Exemplo de arquivo de configuração de variáveis de ambiente.
+- **.gitignore**: Arquivo que lista os arquivos e diretórios a serem ignorados pelo Git.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/28d83018-ebe0-4a6f-bbed-63f76f4ee34d) and start prompting.
+## Instalação
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone o repositório:
+   ```
+   git clone <URL_DO_REPOSITORIO>
+   ```
+2. Navegue até o diretório do projeto:
+   ```
+   cd agendamentos-multilojas
+   ```
+3. Instale as dependências do Composer:
+   ```
+   composer install
+   ```
+4. Configure o arquivo `.env` com suas credenciais de banco de dados.
+5. Execute as migrações para criar as tabelas no banco de dados:
+   ```
+   php artisan migrate
+   ```
+6. Inicie o servidor local:
+   ```
+   php -S localhost:8000 -t public
+   ```
 
-**Use your preferred IDE**
+## Uso
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Acesse o sistema através do navegador em `http://localhost:8000`. Siga as instruções na interface para cadastrar lojas, serviços e gerenciar agendamentos.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Contribuição
 
-Follow these steps:
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Licença
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/28d83018-ebe0-4a6f-bbed-63f76f4ee34d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.

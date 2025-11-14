@@ -1,0 +1,82 @@
+/* 
+ * Este arquivo contém os estilos CSS da aplicação.
+ */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4cae4c;
+}
+
+/* Formulários */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #35424a;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

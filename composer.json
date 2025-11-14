@@ -1,0 +1,13 @@
+{
+    "name": "meu/agendamentos-multilojas",
+    "description": "Sistema de Agendamentos Multi-lojas",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/",
+            "Helper\\": "src/Helper/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}

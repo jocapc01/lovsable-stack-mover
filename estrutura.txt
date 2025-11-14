@@ -1,0 +1,21 @@
+/agendamentos-multilojas
+  /config
+    database.php
+    config.php
+  /public
+    /assets
+      /css
+      /js
+      /img
+    index.php
+    .htaccess
+  /src
+    /Controller
+    /Model
+    /View
+    /Helper
+  /views
+    /layouts
+    /admin
+    /loja
+    /cliente
